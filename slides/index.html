@@ -54,6 +54,27 @@
 			</section>
 			<section data-markdown>
 				<textarea data-template>
+					### Javascript Data Types
+					Six data types that are primitives:
+					- Number
+					- String
+					- Boolean
+					- Null
+					- Undefined
+					- Symbol
+					
+					[read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures#Data_types)
+					Note:
+					- Number: numbers between -(253 -1) and 253 -1.
+					- JavaScript's String type is used to represent textual data.
+					- Boolean represents a logical entity and can have two values: true, and false.
+					- The Null type has exactly one value: null.
+					- Undefined: A variable that has not been assigned a value has the value undefined.
+					- A Symbol is a unique and immutable primitive value.
+				</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
 					### Exercise 2
 					[GO](../blockly/demos/code/index.html)
 					Note:
@@ -67,6 +88,38 @@
 					### Exercise 2 Recap
 					- Integer	
 					- Math operations
+				</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					### Math
+					Arithmetic operators
+					- "+"	Addition
+					- "-"	Subtraction
+					- "*"	Multiplication
+					- "/"	Division
+					- "%"	Remainder (sometimes called modulo)
+					
+					[read more](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math#Arithmetic_operators)					
+				</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					### Variables
+					A variable is a named location for storing a value. 
+					<br> That way an unpredictable value can be accessed through a predetermined name.
+					
+					[read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Declarations)					
+				</textarea>
+			</section>
+			<section data-background-video="https://i.giphy.com/media/V6i0NWDhJNfIQ/giphy.mp4" data-background-video-loop data-background-video-muted></section>
+			<section data-markdown>
+				<textarea data-template>
+					### Assignment operators
+					Assignment operators are operators that assign a value to a variable.<br>
+					It simply assigns the variable on the left the value stated on the right
+					
+					[read more](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math#Assignment_operators)					
 				</textarea>
 			</section>
 			<section data-markdown>
@@ -95,7 +148,7 @@
 					- take a name for input, asking "What's your name?"
 					- print the name
 					- print "Hello, ${name}"
-					- [exe] ask "What's your surname" and print how may charachters contains
+					- [exe] ask "What's your surname" and print how many charachters contains
 				</textarea>
 			</section>
 			<section data-markdown>
@@ -123,6 +176,28 @@
 			</section>
 			<section data-markdown>
 				<textarea data-template>
+					### Comparison operators					
+					
+					- "==="	Strict equality
+					- "!=="	Strict-non-equality
+					- "<"	Less than
+					- ">"	Greater than
+					- "<="	Less than or equal to
+					- ">="	Greater than or equal to
+					
+					[read more](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Math#Comparison_operators)	
+					Note:
+					Sometimes we will want to run true/false tests, then act accordingly depending on the result of that test — to do this we use comparison operators.
+					- "==="	Strict equality	Tests whether the left and right values are identical to one another
+					- "!=="	Strict-non-equality	Tests whether the left and right values not identical to one another	5 !== 2 + 3
+					- "<"	Less than	Tests whether the left value is smaller than the right one.	10 < 6
+					- ">"	Greater than	Tests whether the left value is greater than the right one.	10 > 20
+					- "<="	Less than or equal to	Tests whether the left value is smaller than or equal to the right one.	3 <= 2
+					- ">="	Greater than or equal to				
+				</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
 					### Exercise 6
 					[GO](../blockly/demos/code/index.html)
 					Note:
@@ -136,19 +211,48 @@
 					- Loops: for
 				</textarea>
 			</section>
+			<section data-background-video="https://media.giphy.com/media/3ohs7UjgdqCnkEYcsE/giphy.mp4" data-background-video-loop data-background-video-muted></section>
+			<section data-markdown>
+				<textarea data-template>
+					### Loops
+					Programming loops are all to do with doing the same thing over and over again (iteration).					
+					A loop usually has one or more of the following features:
+					- A counter
+					- An exit condition
+					- An iterator
+					
+					[read more](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Looping_code)	
+					Note:
+					A loop usually has one or more of the following features:
+ 					- A counter, which is initialized with a certain value
+					- An exit condition, which is the criteria under which the loop stops — usually the counter reaching a certain value. 
+					- An iterator, which generally increments the counter by a small amount on each successive loop, until it reaches the exit condition. 
+				
+				</textarea>
+			</section>
 			<section data-markdown>
 				<textarea data-template>
 					### Exercise 7
 					[GO](../blockly/demos/code/index.html)
 					Note:
 					- print numbers from 1 to 10 in a while									
-					- [exe] ask a number as input until the number is even	
+					- [exe] take a number as input until the number is even, then print "the number is even!"
 				</textarea>
 			</section>
 			<section data-markdown>
 				<textarea data-template>
 					### Exercise 7 Recap
 					- Loops: while
+				</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					### Functions
+					A function is a code snippet that can be called by other code or by itself.<br>
+					When a function is called, arguments are passed to the function as input, and the function can optionally return an output.
+					
+					[read more](https://developer.mozilla.org/en-US/docs/Glossary/Function)	
+					
 				</textarea>
 			</section>
 			<section data-markdown>
@@ -168,6 +272,17 @@
 			</section>
 			<section data-markdown>
 				<textarea data-template>
+					### Lists: Array
+					An array is an ordered collection of data. 
+					Arrays are used to store multiple values in a single variable. 
+					Each item in an array has a number attached to it, called a numeric index, that allows you to access it.					
+
+					[read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)	
+					
+				</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
 					### Exercise 9
 					[GO](../blockly/demos/code/index.html)
 					Note:
@@ -181,15 +296,48 @@
 					- Lists
 				</textarea>
 			</section>
-
+			<section data-markdown>
+				<textarea data-template>
+						### Javascript
+						JavaScript (JS) is a programming language
+						<br>JavaScript is mostly used in the browser, enabling developers to manipulate webpage content
+						
+						[read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide)	
+						
+					</textarea>
+			</section>
 			<section data-markdown>
 				<textarea data-template>
 					### Exercise 10
-					Do all previous exercise in JS with this
+					Do all previous exercise in JavaScript with this
 					[playground](../playground/index.html)					
 				</textarea>
 			</section>
-
+			<section data-markdown>
+				<textarea data-template>
+					### Exercise 10
+					- Print "Hello world!"	
+					- Print 4*4	
+					- Create a variable that contains a math operation and print it
+					- Ask "What's your surname" and print how many charachters contains
+					- Take two strings in input and check if they are equal							
+				</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					### Exercise 10					
+					- Print numbers from 1 to 10	
+					- Take a number as input until the number is even, then print "the number is even!"	
+					- Write a function that multiply two numbers
+					- Ask your favourite 3 fruits, save them in a list and print the list	
+				</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					### References
+					[MDN by Mozilla](https://developer.mozilla.org/en-US/)
+				</textarea>
+			</section>
 			<section data-markdown>
 				<textarea data-template>
 						### Thank you
