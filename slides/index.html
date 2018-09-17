@@ -33,7 +33,8 @@
 					Alberto Narda<br>_FrontEnd Architect_
 				</textarea>
 			</section>
-			<section data-background-video="https://i.giphy.com/media/10zxDv7Hv5RF9C/giphy.mp4" data-background-video-loop data-background-video-muted></section>
+			<section data-background-video="https://i.giphy.com/media/10zxDv7Hv5RF9C/giphy.mp4" data-background-video-loop
+			 data-background-video-muted></section>
 			<section data-background-image="https://www.computerhope.com/cdn/whirlwind-machine.jpg"></section>
 			<section data-background-image="https://c1.staticflickr.com/7/6061/6044505487_41be6f9241_b.jpg"></section>
 			<section data-markdown>
@@ -112,7 +113,8 @@
 					[read more](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types#Declarations)					
 				</textarea>
 			</section>
-			<section data-background-video="https://i.giphy.com/media/V6i0NWDhJNfIQ/giphy.mp4" data-background-video-loop data-background-video-muted></section>
+			<section data-background-video="https://i.giphy.com/media/V6i0NWDhJNfIQ/giphy.mp4" data-background-video-loop
+			 data-background-video-muted></section>
 			<section data-markdown>
 				<textarea data-template>
 					### Assignment operators
@@ -148,7 +150,7 @@
 					- take a name for input, asking "What's your name?"
 					- print the name
 					- print "Hello, ${name}"
-					- [exe] ask "What's your surname" and print how many charachters contains
+					- [exe] ask "What's your surname" and print how many characters contains
 				</textarea>
 			</section>
 			<section data-markdown>
@@ -211,7 +213,8 @@
 					- Loops: for
 				</textarea>
 			</section>
-			<section data-background-video="https://media.giphy.com/media/3ohs7UjgdqCnkEYcsE/giphy.mp4" data-background-video-loop data-background-video-muted></section>
+			<section data-background-video="https://media.giphy.com/media/3ohs7UjgdqCnkEYcsE/giphy.mp4"
+			 data-background-video-loop data-background-video-muted></section>
 			<section data-markdown>
 				<textarea data-template>
 					### Loops
@@ -315,11 +318,153 @@
 			</section>
 			<section data-markdown>
 				<textarea data-template>
+					### Print & Prompt
+					
+					<pre class="javascript"><code data-trim data-noescape>
+						// print
+						window.alert("abc");
+
+						// prompt
+						someText = window.prompt("abc");
+					</code></pre>			
+				</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+						### Variables & DataTypes
+						
+						<pre class="javascript"><code data-trim data-noescape>
+							// create a new variables
+							var someText;
+							var aNumber;
+							var aBoolean;
+	
+							// data types
+							someText = "Hello World"; // or 'Hello World'
+							aNumber = 99;
+							aBoolean = true // or false
+						</code></pre>			
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					### Math operations
+					
+					<pre class="javascript"><code data-trim data-noescape>										
+						// create a var
+						var aNumber;
+
+						// Basic Math
+						aNumber = 2+2;
+						aNumber = aNumber * 3;
+
+						//Square Root
+						Math.sqrt(9);
+						
+						// Is Even?
+						aNumber % 2 == 0;
+					</code></pre>			
+				</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+					### String operations
+					
+					<pre class="javascript"><code data-trim data-noescape>										
+						// create a var
+						var someText;
+
+						// append text
+						someText = "Hello World";
+						someText = someText + " it's me";
+
+						//length
+						someText.length;
+					</code></pre>			
+				</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+						### Logic
+						
+						<pre class="javascript"><code data-trim data-noescape>	
+								var someText = "hello";
+								var aNumber = 2;									
+								if (someText === "world") {
+									// do something
+								} else if (aNumber > 3) {
+									// do something
+								} else {
+									// do something
+								}
+						</code></pre>			
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+						### Loops
+						
+						<pre class="javascript"><code data-trim data-noescape>	
+								// "count from to" For loop
+								var i;
+								for (i = 1; i <= 10; i++) {
+									// do something
+								}
+
+								// while
+								var condition = false;
+								while (condition) {
+									// do something
+								}
+						</code></pre>			
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+						### Lists
+						
+						<pre class="javascript"><code data-trim data-noescape>
+								var fruits;
+								var i = 0;
+								// create a list
+								fruits = ['Orange', 'Banana', 'Apple'];
+
+								// get list length
+								fruits.length;
+
+								// get i-th element of the list
+								list[i];
+
+								// set i-th element of the list
+								list[i] = "Peach";
+						</code></pre>			
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
+						### Functions
+						
+						<pre class="javascript"><code data-trim data-noescape>
+								// define a function
+								function multiplyAndSubtract(x) {
+									var result = x * x;
+									result = result - x;
+									return result;
+								}
+
+								// use a function
+								window.alert(multiplyAndSubtract(2));
+								window.alert(multiplyAndSubtract(10));
+						</code></pre>			
+					</textarea>
+			</section>
+			<section data-markdown>
+				<textarea data-template>
 					### Exercise 10
 					- Print "Hello world!"	
 					- Print 4*4	
 					- Create a variable that contains a math operation and print it
-					- Ask "What's your surname" and print how many charachters contains
+					- Ask "What's your surname" and print how many characters contains
 					- Take two strings in input and check if they are equal							
 				</textarea>
 			</section>
@@ -328,8 +473,8 @@
 					### Exercise 10					
 					- Print numbers from 1 to 10	
 					- Take a number as input until the number is even, then print "the number is even!"	
-					- Write a function that multiply two numbers
 					- Ask your favourite 3 fruits, save them in a list and print the list	
+					- Write a function that multiply two numbers
 				</textarea>
 			</section>
 			<section data-markdown>
